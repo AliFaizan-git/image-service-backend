@@ -1,5 +1,9 @@
 node_modules
 dist
-.env
-*.log
 .git
+.github
+.env
+.env.*
+*.md
+docker-compose*.yml
+coverage
