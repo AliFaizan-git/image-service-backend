@@ -36,6 +36,8 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
+          provenance: false
+          sbom: false
           push: true
           tags: |
             ${{ steps.ecr.outputs.registry }}/${{ env.ECR_REPOSITORY }}:${{ github.sha }}
